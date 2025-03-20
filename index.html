@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/al-qaswa.png" rel="icon">
+  <link href="assets/img/al-qaswa.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -24,8 +24,13 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
   <!-- =======================================================
   * Template Name: Dewi
@@ -45,7 +50,7 @@
 <div id="bookCallPopup" class="popup">
   <div class="popup-content">
     <img src="assets/img/services.jpg" alt="Call Image">
-    <form id="callForm">
+    <form  action="https://script.google.com/macros/s/AKfycbxq2_QjaezeetormVkuV7RlgwKSOmipJnwRN-9WWEqH2oDrV7UDzRPxIEVimvYjDFoKRw/exec" id="callForm" method="post">
       <span class="close">&times;</span>
       <h2>Book a Call</h2>
       
@@ -69,36 +74,6 @@
 </div>
 </div>
 
-
-<script>
-// JavaScript remains the same
-var popup = document.getElementById("bookCallPopup");
-var span = document.getElementsByClassName("close")[0];
-
-window.onload = function() {
-  popup.style.display = "flex";
-};
-
-span.onclick = function() {
-  popup.style.display = "none";
-};
-
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-};
-
-document.getElementById('callForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
-    console.log("Form submitted:", {name, email, phone, message});
-    popup.style.display = "none";
-});
-</script>
 
 
   <div class="whatsapp-icon">
@@ -128,12 +103,14 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div style="height: 146px;" class="container-fluid container-xl position-relative d-flex align-items-center ">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">AL-QASWA</h1>
+         <img style="size: 200px;" src="assets/img/qaswa-text-logo.png" alt="">
+        
+         
+        
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -185,10 +162,11 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
+            <h3>our Partner to Unleash the Odyssey of
+              Business Success</h3>
             <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+            <p>At Al-Qaswa, we are a team of dedicated professionals, including accountants, auditors, and financial analysts, committed to delivering exceptional business consultancy services.</p>
+            <p>Our services go beyond traditional auditing and accounting to encompass business consultancy, tax advisory, regulatory compliance, and digital marketing. With a presence across GCC, we uphold values of professionalism, integrity, and reliability in all our endeavors.</p>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
@@ -197,9 +175,9 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 magna aliqua.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>With Al-Qaswa you’ll never have to waste time navigating the business process to make it right</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>We make the business setup in Saudi Arabia and UAE time-efficient and easier than ever.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Our consultants let you minimise the potential financial risks through financial consultation.</span></li>
               </ul>
               <p>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -296,7 +274,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Business Incorporation</h3>
                 </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                <p>Get company incorporation assistance and compliance support right after the registration process.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -313,7 +291,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Business Cunsultation</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>Our business consultation services augment your business requirements through essential aspects of businesses.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -330,7 +308,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Digital Marketing</h3>
                 </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <p>Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -347,7 +325,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Technology Solutions</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -364,7 +342,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Financial & Accounting</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -381,7 +359,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                 <a href="service-details.html" class="stretched-link">
                   <h3>Audit & Taxation</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -444,7 +422,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3>Redefine your business with endless transformation possibilities.</h3>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
@@ -457,9 +435,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                   <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Many businesses dream of entering the market, but navigating the complexities can feel overwhelming. At Beacon Global, we understand your struggles. We're not just consultants; we're your trusted partner.rum
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -561,60 +537,60 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <i class="bi bi-person-fill-check icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <h4 class="title"><a href="#" class="stretched-link">Customer Centric</a></h4>
+                <p class="description">We understand the customers and consider their expectations to align the services with their needs.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+              <i class="bi bi-chat-dots-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <h4 class="title"><a href="#" class="stretched-link">Ease of Setup</a></h4>
+                <p class="description">With us, your business setup is never going to be a hassle— it becomes as easy as a pie!</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+              <i class="bi-people-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <h4 class="title"><a href="#" class="stretched-link">global perspective</a></h4>
+                <p class="description">Our team considers the business concerns and resolves them while addressing them on a global level.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
+              <i class="bi bi-globe2 icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <h4 class="title"><a href="#" class="stretched-link">Collaborative Approach</a></h4>
+                <p class="description">With collaboration, we equip businesses to face real-world challenges and retain relationships.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+              <i class="bi bi-star-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                <h4 class="title"><a href="#" class="stretched-link">Communication</a></h4>
+                <p class="description">We adopt the process of sharing ideas and developing solutions based on the client's needs.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+              <i class="bi bi-hand-thumbs-up-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                <h4 class="title"><a href="#" class="stretched-link">Dedicated Teams</a></h4>
+                <p class="description">Our team dedicatedly works on project realization right from the beginning to the final deployment.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -821,7 +797,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur</p>
+        <p>Get in touch with Us.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -858,19 +834,19 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="https://script.google.com/macros/s/AKfycbw8PAHERw90l0mLygMlmzC-kD8av95Oe-ZFxQrcPISexy3F8AHMcNPbE1e5OULYzeqL/exec" id="submit-form" method="post"  class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input id="fname" type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input id="lname" type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
@@ -882,7 +858,7 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button id="submitButton" type="submit">Send Message</button>
                 </div>
 
               </div>
@@ -986,7 +962,63 @@ document.getElementById('callForm').addEventListener('submit', function(event) {
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
+<script>
+  // JavaScript remains the same
+  var popup = document.getElementById("bookCallPopup");
+  var span = document.getElementsByClassName("close")[0];
+  
+  window.onload = function() {
+    popup.style.display = "flex";
+  };
+  
+  span.onclick = function() {
+    popup.style.display = "none";
+  };
+  
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };
+  
+  </script>
+
+<script>
+  $("#submit-form").submit((e)=>{
+      $.ajax({
+          
+          success:function (response){
+              alert("Call has been scheduled")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
+
+
+<script>
+  $("#callForm").submit((e)=>{
+      $.ajax({
+          
+          success:function (response){
+              alert("Call has been scheduled")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
 </body>
 
 </html>
